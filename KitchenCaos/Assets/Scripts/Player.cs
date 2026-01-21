@@ -50,6 +50,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
         if(selectedCounter != null)
         {
             selectedCounter.Interact(this);
+            return;
         }
         Vector2 inputVector = gameInput.getMovementVectorNormalized();
         Vector3 moveDir = new Vector3(inputVector.x, 0, inputVector.y);
