@@ -59,7 +59,7 @@ public class CuttingCounter : BaseCounter, IHasProgress {
             KitchenObjectsSO outputKitchenObjectSO = GetOutputForInput(GetKitchenObject().GetKitchenObjectsSO());
             GetKitchenObject().DestroySelf();
 
-            KitchenObject.SpwanKitchenObject(outputKitchenObjectSO, this);
+            KitchenObject.SpawnKitchenObject(outputKitchenObjectSO, this);
         }
     }
 
