@@ -6,6 +6,10 @@ public class GameOverUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI recipesDeliveredText;
 
+    private void Awake()
+    {
+        Hide();
+    }
     private void Start()
     {
         GameManager.Instance.OnStateChanged += GameManager_OnStateChanged;
